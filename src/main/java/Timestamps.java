@@ -18,7 +18,14 @@ class Timestamps {
         /*
          *  your code goes here
          */
+        hours2 -= hours1;
+        minutes2 -= minutes1;
+        seconds2 -= seconds1;
 
+        hours2 = hours2 * 3600;
+        minutes2 = minutes2 * 60;
+
+        System.out.print(hours2 + minutes2 + seconds2); 
 
         // closing the scanner object
         scanner.close();
